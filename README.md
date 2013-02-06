@@ -6,6 +6,9 @@ Single Page CRUD operations on ActiveRecord models with controller behavior inhe
   [The MIT License (MIT)]( http://opensource.org/licenses/MIT)
   
   ![AjaxCrudBehavior](https://lguzqa.dm1.livefilestore.com/y1pN2rQywAmmTrMk-9OM5v9saB6WHspBBN30o1Ji-MdQifVPFTsycmi9-bsvlpIfaBk04lRVNFr2dfAQBaWw3XlaR435mj5_ug8/ajaxcrud.jpg?psid=1)
+  
+  
+## [LIVE DEMO](http://yiilab.kabasakalis.tk/product/admingrid)
 
 ## Overview
 Create, update and view details of records in a fancybox pop up.
