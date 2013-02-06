@@ -75,23 +75,23 @@ Your controller code
  ~~~
 Templates for the form and view files are provided,you will only need to modify property names and input fields
  for your specific model and copy to view folder of your controller.
- - Last,you need to configure property columns for the CGridView in admingrid.php and copy it to controller's view folder.
+- Last,you need to configure property columns for the CGridView in admingrid.php and copy it to controller's view folder.
    Again,a template is provided-it's straightforward.
- - Make sure you include jquery before any other scripts.Either uncomment the relevant line in register_Js_Css() function of AjaxCrudBehavior or
+- Make sure you include jquery before any other scripts.Either uncomment the relevant line in register_Js_Css() function of AjaxCrudBehavior or
    register it somewhwere else in your code.
- - Example files use bootstrap styled markup.Uncomment the relevant line that registers bootstrap.css in register_Js_Css() function of AjaxCrudBehavior
+- Example files use bootstrap styled markup.Uncomment the relevant line that registers bootstrap.css in register_Js_Css() function of AjaxCrudBehavior
    if it's not already registered somewhere else in your application.
-   - Navigate to /[controllerID]/admingrid to render the administration page.
- - Example files for model,controller,form and view files are provided.
+- Navigate to /[controllerID]/admingrid to render the administration page.
+- Example files for model,controller,form and view files are provided.
 
 
     ##Resources
- - [Fancybox](http://www.fancyapps.com/fancybox/)
- - [Noty](http://needim.github.com/noty/)
- - [Bootstrap](http://twitter.github.com/bootstrap/)
- - [Bootstrap extension for Yii]( http://www.yiiframework.com/extension/bootstrap)
- - [JQueryForm Plugin]( http://malsup.com/jquery/form/)
- - [spin.js](http://fgnass.github.com/spin.js/)
+- [Fancybox](http://www.fancyapps.com/fancybox/)
+- [Noty](http://needim.github.com/noty/)
+- [Bootstrap](http://twitter.github.com/bootstrap/)
+- [Bootstrap extension for Yii]( http://www.yiiframework.com/extension/bootstrap)
+- [JQueryForm Plugin]( http://malsup.com/jquery/form/)
+- [spin.js](http://fgnass.github.com/spin.js/)
 
 
 
