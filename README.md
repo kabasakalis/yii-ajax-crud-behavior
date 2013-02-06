@@ -50,7 +50,7 @@ The only requirement is that it includes  a  search function  that returns  a CA
 - Write a controller for the model.The only requirement for the controller is that includes the code below and
   extends from BaseController.
  ~~~ php
-class [MODEL CLASS NAME]Controller extends BaseController
+class [ MODEL CLASS NAME ] Controller extends BaseController
 {
 public function init(){
     $this->ajaxCrudBehavior->register_Js_Css();
@@ -63,7 +63,7 @@ public function init(){
                    'ajaxCrudBehavior' => array('class' => 'application.behaviors.AjaxCrudBehavior',
                    'modelClassName' =>'[MODEL CLASS NAME(ex.Product)]',
                    'form_alias_path' =>'[FORM PATH ALIAS (ex.application.views.product._form)]',
-                   'view_alias_path' =>'[VIEW PATH ALIAS (ex.'application.views.product._view')]' ,
+                   'view_alias_path' =>'[VIEW PATH ALIAS (ex.'application.views.product._view)]' ,
                    'pagination'=>'10'      //page size for CGridView pagination
                )
            );
