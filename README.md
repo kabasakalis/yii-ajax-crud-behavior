@@ -26,7 +26,7 @@ Yii 1.1.12 or above,may work with older versions too.
 - Prepare the database table for your ActiveRecord model,say Product.(example product.sql provided).
 - Create the model ActiveRecord class file that corresponds to product table,(example Product.php).
 The only requirement is that it includes  a  search function  that returns  a CActiveDataProvider instance to populate CGridView:
- ~~~
+ ~~~ php
  public function search($pagination)
  	{
  		// Warning: Please modify the following code to remove attributes that
@@ -49,7 +49,7 @@ The only requirement is that it includes  a  search function  that returns  a CA
  ~~~
 - Write a controller for the model.The only requirement for the controller is that includes the code below and
   extends from BaseController.
- ~~~
+ ~~~ php
 class [MODEL CLASS NAME]Controller extends BaseController
 {
 public function init(){
