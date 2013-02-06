@@ -15,7 +15,7 @@ Instead of gii generated files,I wrote a reusable  behavior that adds controller
  repetition of code across different controllers.Javascript has been moved to a js file resulting in cleaner code.
 
 ##Requirements
-Yii 1.1.2 or above,may work with older versions too.
+Yii 1.1.12 or above,may work with older versions too.
 
 ## Setup.
 
