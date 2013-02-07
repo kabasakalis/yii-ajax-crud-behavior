@@ -1,14 +1,15 @@
 <?php
 /**
- * Ajax Crud Administration
- * PostCategory * index.php view file
- * InfoWebSphere {@link http://libkal.gr/infowebsphere}
- * @author  Spiros Kabasakalis <kabasakalis@gmail.com>
- * @link http://reverbnation.com/spiroskabasakalis/
- * @copyright Copyright &copy; 2011-2012 Spiros Kabasakalis
+ *    admingrid.php file TEMPLATE
+ *  2/6/13
+ *  12:04 AM
+ * @author Spiros Kabasakalis <kabasakalis@gmail.com>
+ * @link http://iws.kabasakalis.gr/
+ * @link http://www.reverbnation.com/spiroskabasakalis
+ * @copyright Copyright &copy; 2013 Spiros Kabasakalis
  * @since 1.0
- * @ver 1.3
- * @license The MIT License
+ * @license  http://opensource.org/licenses/MIT  The MIT License (MIT)
+ * @version 1.0.0
  */
 ?>
 <p>
