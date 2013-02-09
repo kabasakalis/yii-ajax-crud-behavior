@@ -11,29 +11,10 @@
  *
  */
 
-
 //document ready
 $(function () {
-    //spinner
-    var spinnneropts = {
-        lines:13, // The number of lines to draw
-        length:7, // The length of each line
-        width:4, // The line thickness
-        radius:20, // The radius of the inner circle
-        corners:1, // Corner roundness (0..1)
-        rotate:0, // The rotation offset
-        color:'#000', // #rgb or #rrggbb
-        speed:1, // Rounds per second
-        trail:60, // Afterglow percentage
-        shadow:false, // Whether to render a shadow
-        hwaccel:false, // Whether to use hardware acceleration
-        className:'spinner', // The CSS class to assign to the spinner
-        zIndex:2e9, // The z-index (defaults to 2000000000)
-        top:'auto', // Top position relative to parent in px
-        left:'auto' // Left position relative to parent in px
-    };
-    var spinnertarget = document.getElementById(AjaxCrudBehavior.modelClassName + "-grid");
-    var spinner = new Spinner(spinnneropts)
+
+    var  spinnertarget = "#"+AjaxCrudBehavior.modelClassName + "-grid";
 
     $.refresh_grid = function () {
         var page = $("li.active  > a").text();
@@ -51,10 +32,10 @@ $(function () {
                 url:Yii_js.baseUrl + "/" + AjaxCrudBehavior.controllerID + '/' + 'deleteAjax',
                 data:{"id":id, "YII_CSRF_TOKEN":Yii_js.csrf},
                 beforeSend:function () {
-                    spinner.spin(spinnertarget);
+                    $(spinnertarget).spin("large", "white");
                 },
                 complete:function () {
-                    spinner.stop();
+                    $(spinnertarget).spin(false);
                 },
                 success:function (data) {
                    // var res = jQuery.parseJSON(data);
@@ -102,10 +83,10 @@ $(function () {
                          url:Yii_js.baseUrl + "/" + AjaxCrudBehavior.controllerID + '/' + 'returnDetailsView',
                          data:{"id":id, "YII_CSRF_TOKEN":Yii_js.csrf },
                          beforeSend:function () {
-                             spinner.spin(spinnertarget);
+                             $(spinnertarget).spin("large", "white");
                          },
                          complete:function () {
-                             spinner.stop();
+                             $(spinnertarget).spin(false);
                          },
                          success:function (data) {
                              $.fancybox(data,
@@ -135,10 +116,10 @@ $(function () {
                          url:Yii_js.baseUrl + "/" + AjaxCrudBehavior.controllerID + '/' + 'returnAjaxForm',
                          data:{"update_id":id, "YII_CSRF_TOKEN":Yii_js.csrf },
                          beforeSend:function () {
-                             spinner.spin(spinnertarget);
+                             $(spinnertarget).spin("large", "white");
                          },
                          complete:function () {
-                             spinner.stop();
+                             $(spinnertarget).spin(false);
                          },
                          success:function (data) {
                              $.fancybox(data,
@@ -241,10 +222,10 @@ $(function () {
                 url:Yii_js.baseUrl + "/" + AjaxCrudBehavior.controllerID + '/' + 'returnajaxform',
                 data:{"YII_CSRF_TOKEN":Yii_js.csrf},
                 beforeSend:function () {
-                    spinner.spin(spinnertarget);
+                    $(spinnertarget).spin("large", "white");
                 },
                 complete:function () {
-                    spinner.stop();
+                    $(spinnertarget).spin(false);
                 },
                 success:function (data) {
                     $.fancybox(data,

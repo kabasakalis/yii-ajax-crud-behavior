@@ -87,7 +87,8 @@ EOD;
         Yii::app()->clientScript->registerScriptFile($baseUrl . '/js_plugins/noty/js/noty/layouts/center.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile($baseUrl . '/js_plugins/noty/js/noty/themes/default.js', CClientScript::POS_END);
         //js spinner
-       Yii::app()->clientScript->registerScriptFile($baseUrl . '/js_plugins/spin.min.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile($baseUrl . '/js_plugins/spin.min.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile($baseUrl . '/js_plugins/jquery.spin.js', CClientScript::POS_END);
         //fancybox
         Yii::app()->clientScript->registerScriptFile($baseUrl . '/js_plugins/fancybox2/jquery.fancybox.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerCssFile($baseUrl . '/js_plugins/fancybox2/jquery.fancybox.css');
@@ -244,7 +245,8 @@ EOD;
      */
     private function excludeScripts()
     {
-        Yii::app()->clientScript->scriptMap['*.js'] = false;
+
+       Yii::app()->clientScript->scriptMap['*.js'] = false;
     }
 
 }
