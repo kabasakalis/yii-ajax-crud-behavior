@@ -59,6 +59,19 @@ class AjaxCrudBehavior extends CBehavior
         $baseUrl = Yii::app()->baseUrl;
         $csrf = Yii::app()->request->csrfToken;
         $controllerID = $this->owner->id;
+        
+        // @JbalTero - Here's my Fix --------------
+        
+        $moduleID = null;
+        
+        // If it is under a module( or nested)
+        if ( !empty($this->owner->module->id) )  {
+            $moduleID = $this->owner->module->id . '/';
+        }
+        
+        $controllerID = $moduleID . $controllerID;
+        
+        //-----------------------------------------
 
         //pass php variables to javascript
         $ajaxcrud_behavior_js = <<<EOD
